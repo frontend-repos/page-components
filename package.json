@@ -1,0 +1,27 @@
+{
+  "name": "pages",
+  "version": "1.0.0",
+  "description": "A toolkit for building modular Html Pages / Templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontend-repos/pages.git"
+  },
+  "keywords": [
+    "HTML",
+    "Templates"
+  ],
+  "author": "shawn sandy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frontend-repos/pages/issues"
+  },
+  "homepage": "https://github.com/frontend-repos/pages#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-nunjucks-render": "^1.0.0"
+  }
+}
