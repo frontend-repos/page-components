@@ -23,5 +23,8 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-nunjucks-render": "^1.0.0"
+  },
+  "dependencies": {
+    "rucksack-css": "^0.8.5"
   }
 }
