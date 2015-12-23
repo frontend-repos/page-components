@@ -1,0 +1,70 @@
+{
+  "version": "0.03",
+  "app": {
+    "src": "./src/",
+    "build": "deploy/",
+    "startpage": "index.html"
+  },
+  "layouts": {
+    "src": "src/layouts/",
+    "srcFiles": [
+      "src/layouts/*.html",
+      "src/layouts/admin/**/*.html",
+      "src/layouts/pages/**/*.html"
+    ],
+    "srcHtml": [
+      "src/layouts/*.html",
+      "src/layouts/admin/**/*.html",
+      "src/web-components/*.html"
+    ],
+    "srcCss": [
+      "src/assets/css/**/*.css",
+      "src/layouts/inc/*.html"
+    ],
+    "dest": "./src/",
+    "notification": true,
+    "inc": "src/layouts/inc/*.html",
+    "apps": "../app/"
+  },
+  "repo": {
+    "url": "",
+    "user": "",
+    "password": ""
+  },
+  "browserSync": {
+    "baseDir": "./src",
+    "files": [
+      "./src/*.html",
+      "./src/pages/**/*.html",
+      "./src/admin/**/*.html",
+      "./src/web-components/**/*.html",
+      "./src/ng-components/**/*.html",
+      "./src/assets/**/*.css"
+    ],
+    "proxy": "",
+    "port": "8000",
+    "logLevel": "debug",
+    "timestamp": true
+  },
+  "bower": {
+    "install_dir": "package/"
+  },
+  "buildConfig" : {
+    "basicFiles" : [
+      "./src/*.html",
+      "./src/pages/*.html",
+      "./src/assets/**/*.*",
+      "./src/web-components/.bowerrc",
+      "./src/web-components/bower.json"
+    ],
+    "baseBuild" : "builds/base-view",
+    "gulpFiles" : [
+      "package.json",
+      "gulpfile.js",
+      "./gulp/**/*.*"
+    ],
+    "gulpBuild" : "builds/gulp"
+  }
+
+
+}
