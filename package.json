@@ -21,8 +21,20 @@
   },
   "homepage": "https://github.com/frontend-repos/pages#readme",
   "devDependencies": {
+    "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
-    "gulp-nunjucks-render": "^1.0.0"
+    "gulp-concat": "^2.6.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-git": "^1.6.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^1.0.0",
+    "gulp-print": "^2.0.1",
+    "gulp-prompt": "^0.1.2",
+    "gulp-rename": "^1.2.2",
+    "main-bower-files": "^2.11.0",
+    "require": "^2.4.20",
+    "require-dir": "^0.3.0"
   },
   "dependencies": {
     "rucksack-css": "^0.8.5"
