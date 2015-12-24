@@ -3,10 +3,4 @@
  */
 
 var gulp = require('gulp');
-var watch = require('gulp-watch');
 
-gulp.task('watch-nunjucks', function () {
-    watch('src/**/*.html', function(){
-        gulp.start('nunjucks');
-    })
-});
