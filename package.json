@@ -4,7 +4,20 @@
   "description": "A toolkit for building modular Html Pages / Templates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm -v & bower -v",
+    "preversion": "npm run build",
+    "postversion": "git push --tags && npm run git-push",
+    "dev": "browser-sync start --config bs-config.js & WEBPACK_ENV=dev webpack -d",
+    "git-commit": "git add -A . && git commit -a -m 'Release packaged'",
+    "git-push": "git push origin develop",
+    "build": "WEBPACK_ENV=build webpack --progress --colors",
+    "build-html": "rm -r component/ && webpack -p --progress --colors --config html.webpack.config.js",
+    "release": "npm run build && npm run git-commit && npm run version:patch",
+    "version:patch": "npm version patch && git push --tags",
+    "liveview": "browser-sync start --config bs-config.js",
+    "updates": "npm update && bower update",
+    "nunjucks": "gulp nunjucks"
   },
   "repository": {
     "type": "git",
