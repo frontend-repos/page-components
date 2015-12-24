@@ -8,7 +8,7 @@
     "preinstall": "npm -v & bower -v",
     "preversion": "npm run build",
     "postversion": "git push --tags && npm run git-push",
-    "dev": "browser-sync start --config bs-config.js",
+    "dev": "browser-sync start --config bs-config.js && gulp watch-nunjucks",
     "git-commit": "git add -A . && git commit -a -m 'Release packaged'",
     "git-push": "git push origin develop",
     "build": "WEBPACK_ENV=build webpack --progress --colors",
