@@ -17,7 +17,8 @@
     "version:patch": "npm version patch && git push --tags",
     "liveview": "browser-sync start --config bs-config.js",
     "updates": "npm update && bower update",
-    "nunjucks": "gulp nunjucks"
+    "nunjucks": "gulp nunjucks",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,9 @@
   "homepage": "https://github.com/frontend-repos/pages#readme",
   "devDependencies": {
     "browser-sync": "^2.10.1",
+    "eslint": "^1.10.3",
+    "eslint-config-defaults": "^7.1.1",
+    "eslint-config-google": "^0.3.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-file-include": "^0.13.7",
@@ -54,4 +58,5 @@
   "dependencies": {
     "rucksack-css": "^0.8.5"
   }
+
 }
