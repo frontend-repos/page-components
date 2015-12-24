@@ -8,7 +8,7 @@
     "preinstall": "npm -v & bower -v",
     "preversion": "npm run build",
     "postversion": "git push --tags && npm run git-push",
-    "dev": "browser-sync start --config bs-config.js & WEBPACK_ENV=dev webpack -d",
+    "dev": "browser-sync start --config bs-config.js",
     "git-commit": "git add -A . && git commit -a -m 'Release packaged'",
     "git-push": "git push origin develop",
     "build": "WEBPACK_ENV=build webpack --progress --colors",
@@ -45,6 +45,7 @@
     "gulp-print": "^2.0.1",
     "gulp-prompt": "^0.1.2",
     "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.5",
     "main-bower-files": "^2.11.0",
     "require": "^2.4.20",
     "require-dir": "^0.3.0"
