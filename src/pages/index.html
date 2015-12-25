@@ -1,11 +1,18 @@
 <!--index.html-->
 {% extends "layout.html" %}
 
+{% block nav %}
+{% include "navs/nav.html" %}
+{% endblock %}
+
 {% block content %}
-{% include "views/nav.html" %}
 <header>
     <div class="container">
         <h1>This Page was created with Nunjucks.js</h1>
     </div>
 </header>
+{% endblock %}
+
+{% block footer %}
+{% include "footers/footer.html" %}
 {% endblock %}
