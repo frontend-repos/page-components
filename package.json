@@ -35,12 +35,15 @@
   },
   "homepage": "https://github.com/frontend-repos/pages#readme",
   "devDependencies": {
+    "babel-eslint": "^4.1.6",
     "browser-sync": "^2.10.1",
     "eslint": "^1.10.3",
     "eslint-config-defaults": "^7.1.1",
     "eslint-config-google": "^0.3.0",
+    "eslint-plugin-react": "^3.13.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^1.1.1",
     "gulp-file-include": "^0.13.7",
     "gulp-git": "^1.6.0",
     "gulp-load-plugins": "^1.1.0",
@@ -58,5 +61,4 @@
   "dependencies": {
     "rucksack-css": "^0.8.5"
   }
-
 }
