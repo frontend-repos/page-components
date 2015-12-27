@@ -1,10 +1,18 @@
 //default.js
-var gulp = require('gulp');
+
 var sync = require('browser-sync');
+var gulp = require('gulp');
+var argv = require('yargs').argv;
 var plugin = require('gulp-load-plugins');
 
+if(argv.destination == 'build'){
+   console.log("build it");
+}
 gulp.task('default', function () {
 //default function
+    if(argv.destination == 'build'){
+        console.log("build it");
+    }
 });
 
 gulp.task('watch-nunjucks', function () {

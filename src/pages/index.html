@@ -5,12 +5,34 @@
 {% include "navs/nav.html" %}
 {% endblock %}
 
+{% block header %}
+{% include "headers/header.html" %}
+{% endblock %}
+
 {% block content %}
-<header>
+<!--main-->
+
     <div class="container">
-        <h1>This Page was created with Nunjucks.js</h1>
+        <div class="col-md-10">
+            <article>
+                <h1>Sample article!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur culpa cumque
+                    deserunt eligendi eos error expedita fugit in ipsa itaque labore modi molestiae, non nostrum placeat
+                    qui quibusdam ratione reprehenderit rerum temporibus velit vero vitae? Accusamus aliquam at autem
+                    dignissimos dolore error est, et facilis, hic magni maxime minima nesciunt perferendis possimus,
+                    provident quibusdam quod repellat temporibus ut vel.</p>
+            </article>
+        </div>
+        <div class="col-ms-2">
+            <aside>
+                <h3>Sidebar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorem eius enim facilis in
+                    officia officiis quis quisquam sequi velit.</p>
+            </aside>
+        </div>
+
     </div>
-</header>
+
 {% endblock %}
 
 {% block footer %}
