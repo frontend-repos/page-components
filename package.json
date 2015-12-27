@@ -50,15 +50,16 @@
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-nunjucks-render": "^1.0.0",
+    "gulp-postcss": "^6.0.1",
     "gulp-print": "^2.0.1",
     "gulp-prompt": "^0.1.2",
     "gulp-rename": "^1.2.2",
     "gulp-watch": "^4.3.5",
     "main-bower-files": "^2.11.0",
     "require": "^2.4.20",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "rucksack-css": "^0.8.5",
+    "yargs": "^3.31.0"
   },
-  "dependencies": {
-    "rucksack-css": "^0.8.5"
-  }
+  "dependencies": {}
 }
