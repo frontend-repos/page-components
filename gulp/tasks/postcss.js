@@ -4,14 +4,28 @@
 var gulp = require('gulp');
 var argv = require('yargs').argv;
 var plugin = require('gulp-load-plugins')();
+var stylelint = require('stylelint');
 
 //variables
-var destination = 'public/css/';
-if(argv.destination == "production") destination = 'app/css';
-gulp.task('post:css', function(){});
+var dest = 'public/css/';
+if (argv.build == "production") dest = 'app/css/';
 
-gulp.task('rucksack', function(){
-   return gulp.src('src/css/**/*.css')
-    .pipe(plugin.rucksack())
-    .pipe(gulp.dest(destination))
+var processors = [
+    require('autoprefixer'),
+    require('precss'),
+    require('autoprefixer'),
+    require('cssnext')
+
+];
+
+gulp.task('postcss', function () {
+    return gulp.src('./src/css/*.css')
+        .pipe(plugin.postcss(processors))
+        .pipe(gulp.dest(dest));
+});
+
+gulp.task('rucksack', function () {
+    return gulp.src('src/css/**/*.css')
+        .pipe(plugin.rucksack())
+        .pipe(gulp.dest(dest))
 });
