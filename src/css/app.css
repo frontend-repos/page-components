@@ -1,4 +1,4 @@
-$black: #000000;
+$black: #CCCCCC;
 .test {
     background: $black;
 }
@@ -22,4 +22,8 @@ $black: #000000;
 @else {
     background: blue;
 }
+}
+
+.foo {
+  position: absolute 0 20px;
 }
